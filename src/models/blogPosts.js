@@ -1,6 +1,6 @@
 module.exports = (sequelize, DataTypes) => {
   const BlogPosts = sequelize.define(
-    'BlogPost', {
+    'BlogPosts', {
       id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
@@ -18,7 +18,7 @@ module.exports = (sequelize, DataTypes) => {
       },
     },
     {
-      tableName: 'blogPosts',
+      tableName: 'blog_posts',
       underscored: true,
     }
   );
